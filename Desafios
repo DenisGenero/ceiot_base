@@ -1,0 +1,9 @@
+Desafìo bajo: añadir campo "pressure"
+Procedimiento:
+- index.js: se modificò el mètodo app.post, agregàndole los campos key (como hicimos en clases) y el campo pressure.
+- post_measurement.sh: se agregaron los paràmetros para cargar los campos key y pressure
+
+Desafìos validate_post_measuremen y auth:
+Se agregaron en el index.js 2 funciones:
+- validateMeasurement: comprueba si los campos son un nùmero
+- authorizeMeasurement: compara la key con una clave secreta

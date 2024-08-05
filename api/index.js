@@ -31,6 +31,32 @@ async function getMeasurements() {
     return await database.collection(collectionName).find({}).toArray();	
 }
 
+function validateMeasurement(req){
+    var response = true;
+    if(isNaN(req.body.id)){
+        response = false;
+     }
+    if(isNaN(req.body.t)){
+        response = false;
+     }
+    if(isNaN(req.body.h)){
+        response = false;
+     }
+    if(isNaN(req.body.p)){
+        response = false;
+     }
+     return response;
+}
+
+function authorizeMeasurement(req){
+    var response = false;
+    const KeyPass = "secret";
+    if(req.body.key == KeyPass){
+        response = true;
+    }
+    return response;
+}
+
 // API Server
 
 const app = express();
@@ -42,9 +68,21 @@ app.use(express.static('spa/static'));
 const PORT = 8080;
 
 app.post('/measurement', function (req, res) {
--       console.log("device id    : " + req.body.id + " key         : " + req.body.key + " temperature : " + req.body.t + " humidity    : " + req.body.h);	
-    const {insertedId} = insertMeasurement({id:req.body.id, t:req.body.t, h:req.body.h});
-	res.send("received measurement into " +  insertedId);
+    if(validateMeasurement(req)){
+        if(authorizeMeasurement(req)){
+            console.log("device id    : " + req.body.id + " key         : " + req.body.key + " temperature : " + req.body.t + " humidity    : " + req.body.h, "pressure : " + req.body.p);	
+            const {insertedId} = insertMeasurement({id:req.body.id, t:req.body.t, h:req.body.h, p:req.body.p, key:req.body.key});
+	        res.send("received measurement into " +  insertedId);
+	        }
+        else{
+            console.log("Medida no autorizada");
+        	res.send("Not stored");
+        	}
+        }
+	else{
+    	console.log("Medida invàlida");
+    	res.send("Not stored");
+    	}
 });
 
 app.post('/device', function (req, res) {
@@ -53,7 +91,6 @@ app.post('/device', function (req, res) {
     db.public.none("INSERT INTO devices VALUES ('"+req.body.id+ "', '"+req.body.n+"', '"+req.body.k+"')");
 	res.send("received new device");
 });
-
 
 app.get('/web/device', function (req, res) {
 	var devices = db.public.many("SELECT * FROM devices").map( function(device) {
