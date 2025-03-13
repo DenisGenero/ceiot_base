@@ -7,7 +7,7 @@ Denis J. Genero
 ## Sistema victima
 Consta de un servidor central dispuesto en el CENUR Litoral Norte (UdelaR) de la ciudad de Paysandú (Uruguay) que se conecta con una Raspberry Pi 3B y obtiene imágenes a partir de cámaras IP, en un rodeo lechero para estimar el consumo de alimento. El esquema se puede observar en la siguiente figura:
 
-![Figura 1](/Imagenes/Figura1.png)
+![Figura 1](Imagenes/Figura1.png)
 
 ## Resolución
 A continuación se describen los pasos del ataque.
