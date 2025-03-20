@@ -44,7 +44,7 @@ A continuación se describen los pasos del ataque.
 
 ### 6- Command & Control
 - [External Remote Services](https://attack.mitre.org/techniques/T1133/): Tengo la capacidad de acceder remotamente a la Raspberry Pi, lo que me permite controlar el dispositivo y manipular sus funciones sin necesidad de estar físicamente presente.
-- [Network Sniffing](https://attack.mitre.org/techniques/T1040/): Monitoreo la red de la institución para identificar los momentos de mayor actividad o horas pico, lo que me permite planificar mis acciones de forma estratégica y minimizar la posibilidad de detección.
+- [Network Sniffing](https://attack.mitre.org/techniques/T1040/): Monitoreo la red de la institución para identificar los momentos de mayor actividad u horas pico, lo que me permite planificar mis acciones de forma estratégica y minimizar la posibilidad de detección.
 - [Process Injection](https://attack.mitre.org/techniques/T1055/): En los momentos clave, inyecto el malware en los procesos del servidor para alterarlo y causar disrupciones en su funcionamiento, sin que se percaten de la intervención.
 
 
