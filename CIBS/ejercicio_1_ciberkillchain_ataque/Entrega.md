@@ -30,7 +30,7 @@ A continuación se describen los pasos del ataque.
 ### 3- Delivery
 - Decido llevar la Raspberry Pi oculta en una mochila e ingresar a la institución sin llamar la atención, asegurándome de que el dispositivo esté preparado para su posterior activación y despliegue.
 - [Hardware Additions](https://attack.mitre.org/techniques/T1200/): Puedo buscar un lugar discreto dentro del establecimiento para colocar la Raspberry Pi, asegurándome de que pase desapercibida y pueda operar sin interrupciones. Opto por ubicaciones estratégicas, como detrás de muebles, dentro de cajas de conexiones o en áreas poco transitadas.
-- [Masquerading](https://attack.mitre.org/techniques/T1036/): Para evitar sospechas, puedo camuflar la Raspberry Pi como un dispositivo legítimo, ya sea dentro de una carcasa similar a la de un equipo de red, disfrazándola como un cargador o conectándola a un periférico aparentemente inofensivo.
+- [Masquerading](https://attack.mitre.org/techniques/T1036/): Para evitar sospechas, puedo camuflar la Raspberry Pi como un dispositivo legítimo, ya sea dentro de una carcasa similar a la de un equipo de red, disfrazándola como un cargador o un periférico aparentemente inofensivo.
 - Para garantizar su funcionamiento continuo, evalúo opciones de alimentación. Puedo conectarla directamente a la red eléctrica del edificio utilizando un adaptador de corriente, asegurando una operación prolongada sin interrupciones.
 - Como alternativa, puedo utilizar baterías recargables para alimentar la Raspberry Pi, permitiéndole operar de manera autónoma y sin depender de una fuente de energía fija, lo que facilita su instalación en lugares donde no haya acceso a enchufes.
 
