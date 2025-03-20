@@ -43,12 +43,12 @@ A continuación se describen los pasos del ataque.
 - [Valid Accounts](https://attack.mitre.org/techniques/T1078/): La Raspberry Pi se conecta a la red de la institución utilizando credenciales válidas, lo que le permite acceder a los recursos disponibles sin levantar sospechas.
 
 ### 6- Command & Control
-- [External Remote Services](https://attack.mitre.org/techniques/T1133/): Puedo acceder remotamente a la Raspberry Pi.
-- [Network Sniffing](https://attack.mitre.org/techniques/T1040/): Puedo monitorear la red para saber las horas pico de uso.
-- [Process Injection](https://attack.mitre.org/techniques/T1055/): Decido inyectar el malware en los momentos clave para alterar el funcionamiento del servidor.
+- [External Remote Services](https://attack.mitre.org/techniques/T1133/): Tengo la capacidad de acceder remotamente a la Raspberry Pi, lo que me permite controlar el dispositivo y manipular sus funciones sin necesidad de estar físicamente presente.
+- [Network Sniffing](https://attack.mitre.org/techniques/T1040/): Monitoreo la red de la institución para identificar los momentos de mayor actividad o horas pico, lo que me permite planificar mis acciones de forma estratégica y minimizar la posibilidad de detección.
+- [Process Injection](https://attack.mitre.org/techniques/T1055/): En los momentos clave, inyecto el malware en los procesos del servidor para alterarlo y causar disrupciones en su funcionamiento, sin que se percaten de la intervención.
 
 
 ### 7- Actions on Objectives
-- [Remote Service Session Hijacking](https://attack.mitre.org/techniques/T1563/): El malware se ejecuta y provoca caídas del servidor en momentos claves.
-- El sistema no funciona adecuadamente y los clientes no están conformes.
-- [Internal Spearphishing](https://attack.mitre.org/techniques/T1534/): Aprovecho la situación y sustraigo información de los clientes para favorecer la competencia.
+- [Remote Service Session Hijacking](https://attack.mitre.org/techniques/T1563/): El malware se ejecuta en el servidor y provoca caídas en momentos clave, afectando su estabilidad y disponibilidad. Estas interrupciones pueden generar una sensación de inseguridad y disfuncionalidad en el sistema.
+- Como resultado, el sistema no funciona adecuadamente y los clientes experimentan problemas recurrentes, lo que provoca su insatisfacción y genera una oportunidad para explotar la situación.
+- [Internal Spearphishing](https://attack.mitre.org/techniques/T1534/): Aprovecho la disfuncionalidad del sistema y el malestar generado entre los clientes para lanzar un ataque de spearphishing interno. Esto me permite sustraer información sensible de los clientes y utilizarla para beneficiar a la competencia, obteniendo ventajas comerciales y estratégicas.
