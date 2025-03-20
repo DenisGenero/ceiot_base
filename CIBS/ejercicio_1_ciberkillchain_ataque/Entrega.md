@@ -5,7 +5,7 @@ Denis J. Genero
 - Sabotear el sistema para entorpecer su funcionamiento y favorecer el desarrollo de la competencia.
 
 ## Sistema victima
-Consta de un servidor central dispuesto en el CENUR Litoral Norte (UdelaR) de la ciudad de Paysandú (Uruguay) que se conecta con una Raspberry Pi 3B y obtiene imágenes a partir de cámaras IP, en un rodeo lechero para estimar el consumo de alimento. El esquema se puede observar en la siguiente figura:
+El sistema está compuesto por un servidor central ubicado en el CENUR Litoral Norte de la Universidad de la República (UdelaR) en la ciudad de Paysandú, Uruguay. Este servidor se encuentra conectado a una Raspberry Pi 3B, la cual es responsable de capturar y procesar imágenes provenientes de cámaras IP instaladas en un rodeo lechero. El objetivo principal de este sistema es analizar dichas imágenes para estimar el consumo de alimento del ganado. La arquitectura general del sistema se representa en la siguiente figura:
 
 ![Figura 1](Imagenes/Figura1.png)
 
@@ -20,7 +20,7 @@ A continuación se describen los pasos del ataque.
 - [Trusted Relationship](https://attack.mitre.org/techniques/T1199/): Busco establecer una relación de confianza con algún miembro del área de informática, mostrándome como alguien amigable y confiable. A través de interacciones casuales o colaboraciones, intento obtener información clave, como detalles sobre la configuración del sistema, acceso a credenciales o pistas sobre los protocolos de seguridad utilizados en la institución.
 
 ### 2- Weaponization
-- [Obtain Capabilities](https://attack.mitre.org/techniques/T1588/): Puedo descargo un software malicioso diseñado para generar una sobrecarga en el servidor, afectando su rendimiento y estabilidad. Analizo diferentes herramientas disponibles en línea para seleccionar la más adecuada según el tipo de infraestructura y los protocolos de seguridad implementados en la red.
+- [Obtain Capabilities](https://attack.mitre.org/techniques/T1588/): Puedo descargar un software malicioso diseñado para generar una sobrecarga en el servidor, afectando su rendimiento y estabilidad. Analizo diferentes herramientas disponibles en línea para seleccionar la más adecuada según el tipo de infraestructura y los protocolos de seguridad implementados en la red.
 - [Develop Capabilities](https://attack.mitre.org/techniques/T1587/): Puedo desarrollar una aplicación maliciosa con el objetivo de saturar el servidor. Esto me permite personalizar su comportamiento, adaptar los métodos de ataque y evitar posibles detecciones por parte de los sistemas de seguridad de la institución.
 - [Stage Capabilities](https://attack.mitre.org/techniques/T1608/): Para ejecutar el ataque de manera discreta, instalo el malware en una Raspberry Pi y la configuro para operar de forma autónoma dentro de la red. Esto reduce el riesgo de ser detectado y permite ejecutar el ataque de manera remota o programada.
 - [Compromise Infraestructure](https://attack.mitre.org/techniques/T1584/): Puedo alterar la configuración de la infraestructura de red para facilitar el acceso al sistema. Esto puede incluir liberar un puerto bloqueado, modificar reglas de firewall o redirigir tráfico a través de un servidor intermediario, permitiendo un control remoto sobre la red comprometida.
@@ -28,19 +28,19 @@ A continuación se describen los pasos del ataque.
 
 
 ### 3- Delivery
-- Decido llevar la Raspberry Pi oculta en una mochila e ingresar a la institución.
-- [Hardware Additions](https://attack.mitre.org/techniques/T1200/): Puedo colocar la Raspberry Pi en un lugar oculto dentro del esablecimiento.
-- [Masquerading](https://attack.mitre.org/techniques/T1036/): Puedo camuflar a la Raspberry como un dispositivo legítimo y dejarlo dentro de la institución.
-- Puedo conectar la Raspberry a la red eléctrica para darle alimentación.
-- Puedo alimentar la Raspberry mediante baterías.
+- Decido llevar la Raspberry Pi oculta en una mochila e ingresar a la institución sin llamar la atención, asegurándome de que el dispositivo esté preparado para su posterior activación y despliegue.
+- [Hardware Additions](https://attack.mitre.org/techniques/T1200/): Puedo buscar un lugar discreto dentro del establecimiento para colocar la Raspberry Pi, asegurándome de que pase desapercibida y pueda operar sin interrupciones. Opto por ubicaciones estratégicas, como detrás de muebles, dentro de cajas de conexiones o en áreas poco transitadas.
+- [Masquerading](https://attack.mitre.org/techniques/T1036/): Para evitar sospechas, puedo camuflar la Raspberry Pi como un dispositivo legítimo, ya sea dentro de una carcasa similar a la de un equipo de red, disfrazándola como un cargador o conectándola a un periférico aparentemente inofensivo.
+- Para garantizar su funcionamiento continuo, evalúo opciones de alimentación. Puedo conectarla directamente a la red eléctrica del edificio utilizando un adaptador de corriente, asegurando una operación prolongada sin interrupciones.
+- Como alternativa, puedo utilizar baterías recargables para alimentar la Raspberry Pi, permitiéndole operar de manera autónoma y sin depender de una fuente de energía fija, lo que facilita su instalación en lugares donde no haya acceso a enchufes.
 
 ### 4- Exploitation
-- [Hide Artifacts](https://attack.mitre.org/techniques/T1564/): La Raspberry logra pasar desapercibida y nadie nota su presencia.
+- [Hide Artifacts](https://attack.mitre.org/techniques/T1564/): La Raspberry Pi queda oculta en el lugar seleccionado, logrando pasar desapercibida sin levantar sospechas ni alertar al personal de la institución.
 
 
 ### 5-Installation
-- [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/): La Raspberry Pi enciende y queda lista para operar.
-- [Valid Accounts](https://attack.mitre.org/techniques/T1078/): La Raspberry Pi se conecta a la red de la institución.
+- [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/): Una vez encendida, la Raspberry Pi queda disponible para ejecutar comandos y scripts que permitan interactuar con la red.
+- [Valid Accounts](https://attack.mitre.org/techniques/T1078/): La Raspberry Pi se conecta a la red de la institución utilizando credenciales válidas, lo que le permite acceder a los recursos disponibles sin levantar sospechas.
 
 ### 6- Command & Control
 - [External Remote Services](https://attack.mitre.org/techniques/T1133/): Puedo acceder remotamente a la Raspberry Pi.
