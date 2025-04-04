@@ -29,7 +29,9 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 
 ### 3- Delivery
 - **Detección:** El equipo de informática podría realizar inspecciones física periódicas de las instalaciones, buscando hardware no autorizado. Cámaras de seguridad en áreas estratégicas y revisiones manuales en salas de servidores y puntos de red pueden ayudar a identificar dispositivos ocultos.
-- **Mitigación:** Para reducir el riesgo de que hardware no autorizado sea introducido en la red, se debe implementar control de acceso físico restringido en áreas críticas. Esto puede incluir tarjetas de acceso, registro de visitantes y vigilancia en tiempo real.
+- **Mitigación:** Para reducir el riesgo de que hardware no autorizado sea introducido en la red, se podría implementar control de acceso físico restringido en áreas críticas. Esto puede incluir tarjetas de acceso, registro de visitantes y vigilancia en tiempo real.
 
 ### 2- Weaponization
-- **Detección:** 
+- **Detección:** Es fundamental monitorear los cambios en la configuración de red e infraestructura. Esto se puede lograr mediante sistemas de detección de cambios en los archivos de configuración de firewall, routers o switches, así como alertas ante modificaciones en reglas de acceso, NAT o puertos abiertos. Ae pueden utilizar herramientas como [RANCID](https://www.shrubbery.net/rancid/) o [Security Issues in Network Event Loggin (syslog)](https://web.archive.org/web/20071007061205/http://www.employees.org/~lonvick/index.shtml)
+- **Mitigación:** Para reducir la superficie de ataque, se debe aplicar una configuración mínima: mantener solo los puertos, servicios y reglas estrictamente necesarios. Además, se recomienda aplicar backups frecuentes de la configuración de red y utilizar autenticación fuerte en los dispositivos de red para evitar accesos no autorizados que permitan alterar su funcionamiento.
+
