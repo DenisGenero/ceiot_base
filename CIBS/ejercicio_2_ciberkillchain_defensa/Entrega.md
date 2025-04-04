@@ -27,3 +27,9 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 - **Detección:** Se deben revisar los logs del sistema en busca de comandos ejecutados desde dispositivos no autorizados. Un SIEM puede ayudar a identificar actividades sospechosas, como intentos de ejecución de scripts inusuales. También se debe monitorear el uso de herramientas de administración remota dentro de la red.
 - **Mitigación:** Se deben establecer políticas de ejecución restringida mediante herramientas como [AppLocker](https://learn.microsoft.com/es-es/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) (Windows) o [SELinux](https://www.ibm.com/docs/es/db2/11.1.0?topic=security-selinux), evitando que software no autorizado pueda ejecutarse en los servidores. Además, se podrían ejecutar servicios críticos en [entornos aislados (sandboxing)](https://en.wikipedia.org/wiki/Sandbox_(computer_security)) para minimizar el impacto de ataques.
 
+### 3- Delivery
+- **Detección:** El equipo de informática podría realizar inspecciones física periódicas de las instalaciones, buscando hardware no autorizado. Cámaras de seguridad en áreas estratégicas y revisiones manuales en salas de servidores y puntos de red pueden ayudar a identificar dispositivos ocultos.
+- **Mitigación:** Para reducir el riesgo de que hardware no autorizado sea introducido en la red, se debe implementar control de acceso físico restringido en áreas críticas. Esto puede incluir tarjetas de acceso, registro de visitantes y vigilancia en tiempo real.
+
+### 2- Weaponization
+- **Detección:** 
