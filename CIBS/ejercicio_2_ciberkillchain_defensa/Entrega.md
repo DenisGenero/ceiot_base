@@ -37,4 +37,5 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 
 ### 1- Reconnaissance
 - **Detección:** Se debe monitorear el comportamiento de los usuarios en la red para identificar exploraciones sospechosas. Un [Sistema de previsión de intrusos (IPS)](https://es.wikipedia.org/wiki/Sistema_de_prevenci%C3%B3n_de_intrusos) puede detectar intentos de escaneo de red y accesos a recursos fuera del perfil habitual de un usuario. También se pueden analizar patrones de conexión Wi-Fi para identificar dispositivos desconocidos intentando acceder a la red.
+
 -** Mitigación:** Se debe concientizar al personal sobre ingeniería social y limitar la exposición de infraestructura interna. También es recomendable segmentar la red para minimizar la visibilidad de los sistemas internos y aplicar configuraciones que oculten información sensible (por ejemplo, deshabilitar respuestas detalladas en mensajes de error de servidores).
