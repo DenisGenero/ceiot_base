@@ -46,5 +46,5 @@ A continuación se describen los pasos del ataque.
 
 
 ### 7- Actions on Objectives
-- [Remote Service Session Hijacking](https://attack.mitre.org/techniques/T1563/): La Raspberry Pi ejecuta el software, satura al servidor y se provocan caídas en momentos clave, afectando su estabilidad y disponibilidad. Estas interrupciones pueden generar una sensación de inseguridad y disfuncionalidad en el sistema.
+- [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/): La Raspberry Pi ejecuta el software, satura al servidor y se provocan caídas en momentos clave, afectando su estabilidad y disponibilidad. Estas interrupciones pueden generar una sensación de inseguridad y disfuncionalidad en el sistema.
 - Como resultado, el sistema no funciona adecuadamente y los clientes experimentan problemas recurrentes, lo que provoca su insatisfacción y genera una oportunidad para la competencia de captar a esos clientes.
