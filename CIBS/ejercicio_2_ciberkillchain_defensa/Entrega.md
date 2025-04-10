@@ -20,3 +20,7 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 - **Mitigación:** [Disable or Remove Feature or Program](https://attack.mitre.org/mitigations/M1042/): deshabilitar el uso de servicios remotos no autorizados (como SSH o Telnet) a nivel de red utilizando políticas de firewall o listas de control de acceso (ACL), bloqueando por defecto las conexiones salientes hacia puertos comúnmente usados para control remoto. Esto impide que la Raspberry Pi reciba comandos remotos si no está registrada como un dispositivo autorizado.
 
 ### 5- Installation
+- **Detección:** La detección se puede hacer mediante inspección de red para identificar dispositivos desconocidos conectados, por ejemplo con herramientas de escaneo ARP o mapeo de red (como Nmap o Fing). También se puede configurar el DHCP del router o servidor para alertar cuando aparece una nueva MAC address.
+- **Mitigación:**  Aplicar [Networ Access Control](https://attack.mitre.org/mitigations/M1037/) filtrando dispositivos por MAC. Implementar control de acceso a nivel de red puede evitar que dispositivos no autorizados puedan conectarse físicamente a la red. Esto obliga a que cada equipo deba estar previamente registrado para obtener conectividad.
+
+### 4- Exploitation
