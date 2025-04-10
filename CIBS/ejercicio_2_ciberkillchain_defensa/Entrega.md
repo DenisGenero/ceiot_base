@@ -24,3 +24,7 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 - **Mitigación:**  Aplicar [Networ Access Control](https://attack.mitre.org/mitigations/M1037/) filtrando dispositivos por MAC. Implementar control de acceso a nivel de red puede evitar que dispositivos no autorizados puedan conectarse físicamente a la red. Esto obliga a que cada equipo deba estar previamente registrado para obtener conectividad.
 
 ### 4- Exploitation
+- **Detección:** Se recomienda que el equipo de informática realice inspecciones físicas periódicas (por ejemplo 1 vez al mes) en las instalaciones para identificar dispositivos no autorizados conectados a la red. Esto puede complementarse con un inventario activo de dispositivos, contrastado con registros de direcciones MAC, IPs asignadas y puertos de red utilizados.
+- **Mitigación:** [Access Management](https://attack.mitre.org/mitigations/M0807/) Implementar un control físico y lógico sobre la infraestructura de red. Por ejemplo, limitar los puertos de red disponibles y controlar el acceso físico a áreas sensibles.
+
+### 3- Installation
