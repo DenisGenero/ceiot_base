@@ -25,6 +25,13 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 
 ### 4- Exploitation
 - **Detección:** Se recomienda que el equipo de informática realice inspecciones físicas periódicas (por ejemplo 1 vez al mes) en las instalaciones para identificar dispositivos no autorizados conectados a la red. Esto puede complementarse con un inventario activo de dispositivos, contrastado con registros de direcciones MAC, IPs asignadas y puertos de red utilizados.
+- **Mitigación:** Aplicar [Limit Access to Resource Over Network](https://attack.mitre.org/mitigations/M1035/) ayuda a reducir el riesgo de que un dispositivo malicioso, acceda libremente a recursos sensibles. Esto puede implementarse mediante reglas estrictas en firewalls internos, segmentación de red, y políticas que impidan el acceso a servidores desde dispositivos no autorizados o ubicados en zonas no críticas.
+
+### 3- Delivery
+- **Detección:** Mediante cámaras de vigilancia instaladas en las zonas sensibles donde se aloja infraestructura crítica del sistema, como salas técnicas, gabinetes de red o sectores de servidores. El monitoreo en tiempo real, sumado al almacenamiento de grabaciones, permite identificar comportamientos sospechosos o la presencia de personas no autorizadas merodeando por estas áreas.
+- **Mitigación:** Implementar un sistema de videovigilancia en los sectores críticos de infraestructura, con monitoreo constante o revisión periódica de las grabaciones.
+
+### 2- Weaponization
+- **Detección:** Para este paso se considera el contexto de que el atacante haga una [Compromise Infrastructure](https://attack.mitre.org/techniques/T1584/). Se puede detectar esta actividad mediante la supervisión de eventos relacionados con cambios no autorizados en la configuración de red como reglas de firewall o puertos abiertos inesperadamente.
 - **Mitigación:** [Access Management](https://attack.mitre.org/mitigations/M0807/) Implementar un control físico y lógico sobre la infraestructura de red. Por ejemplo, limitar los puertos de red disponibles y controlar el acceso físico a áreas sensibles.
 
-### 3- Installation
