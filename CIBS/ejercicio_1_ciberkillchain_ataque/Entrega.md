@@ -42,9 +42,8 @@ A continuación se describen los pasos del ataque.
 
 ### 6- Command & Control
 - [External Remote Services](https://attack.mitre.org/techniques/T1133/): Tengo la capacidad de acceder remotamente a la Raspberry Pi, lo que me permite controlar el dispositivo y manipular sus funciones sin necesidad de estar físicamente presente.
-- [Network Sniffing](https://attack.mitre.org/techniques/T1040/): Monitoreo la red de la institución para identificar los momentos de mayor actividad u horas pico, lo que me permite planificar mis acciones de forma estratégica y minimizar la posibilidad de detección.
 
 
 ### 7- Actions on Objectives
-- [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/): La Raspberry Pi ejecuta el software, satura al servidor y se provocan caídas en momentos clave, afectando su estabilidad y disponibilidad. Estas interrupciones pueden generar una sensación de inseguridad y disfuncionalidad en el sistema.
+- [Obfuscated Files or Information: Embedded Payloads](https://attack.mitre.org/techniques/T1027/009/): Se escanean vulnerabilidades o configuraciones mal hechas y se aprovechan para explotar vulnerabilidades y hacer caer el servidor. 
 - Como resultado, el sistema no funciona adecuadamente y los clientes experimentan problemas recurrentes, lo que provoca su insatisfacción y genera una oportunidad para la competencia de captar a esos clientes.
